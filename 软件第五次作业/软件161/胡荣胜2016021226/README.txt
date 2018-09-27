@@ -1,1 +1,28 @@
 请上传代码和截图!
+def Addition(x,y):
+    print(x+y)
+def Subtraction(x,y):
+    print(x-y)
+def Multiplication(x,y):
+    print(x*y)
+def Division(x,y):
+    print(x/y)
+
+while True:
+    x,y=map(int,input("请输入要进行计算的数: ").split())
+    judge=input('请问您是要加呢还是减呢还是乘呢还是除呢：')
+    if judge=='+':
+        print(x,"+",y,"=")
+        Addition(x,y)
+    elif judge=='-':
+        print(x,"-",y,"=")
+        (x,y)
+    elif judge=='*':
+        print(x,"*",y,"=")
+        Multiplication(x,y)
+    elif judge=='/':
+        print(x,"/",y,"=")
+        Division(x,y)
+    else:
+        print("非法输入")
+        break;
