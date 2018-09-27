@@ -15,16 +15,16 @@ def chu(x, y):
  
    return x / y
  
-print("Ñ¡ÔñÔËËã£º")
-print("1¡¢¼Ó")
-print("2¡¢¼õ")
-print("3¡¢³Ë")
-print("4¡¢³ı")
+print("é€‰æ‹©è¿ç®—ï¼š")
+print("1ã€åŠ ")
+print("2ã€å‡")
+print("3ã€ä¹˜")
+print("4ã€é™¤")
  
-a = input("ÇëÑ¡Ôñ(1/2/3/4):")
+a = input("è¯·é€‰æ‹©(1/2/3/4):")
  
-b = int(input("ÊäÈëµÚÒ»¸öÊı×Ö: "))
-c = int(input("ÊäÈëµÚ¶ş¸öÊı×Ö: "))
+b = int(input("è¾“å…¥ç¬¬ä¸€ä¸ªæ•°å­—: "))
+c = int(input("è¾“å…¥ç¬¬äºŒä¸ªæ•°å­—: "))
  
 if a == '1':
    print(num1,"+",num2,"=", jia(num1,num2))
