@@ -1,0 +1,13 @@
+print ("hello world")
+def compute(a,op,b):
+	if op == '+':
+		return a+b
+	elif op == '-':
+		return a-b
+	elif op == '*':
+		return a*b
+	else:
+		return a/b
+a = input		
+print(compute(1,'+',2))
+	
