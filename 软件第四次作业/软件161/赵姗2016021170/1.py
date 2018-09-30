@@ -23,3 +23,8 @@ elif choice == '乘':
     print(s, "*", m, "=", multiply(s, m))
 elif choice == '除':
     print(s, "/", m, "=", divide(s, m))
+选择运算：
+输入你的选择(加/减/乘/除):加
+输入第一个数字: 1
+输入第二个数字: 2
+1 + 2 = 3
