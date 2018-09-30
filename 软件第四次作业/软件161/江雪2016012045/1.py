@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
-#编写人：赵姗
+#编写人：江雪
 #编写时间：20180930
 #功能；计算器实现
 def add(x, y):
@@ -23,3 +23,8 @@ elif choice == '乘':
     print(s, "*", m, "=", multiply(s, m))
 elif choice == '除':
     print(s, "/", m, "=", divide(s, m))
+选择运算：
+输入你的选择(加/减/乘/除):减
+输入第一个数字: 100
+输入第二个数字: 56
+100 - 56 = 44
