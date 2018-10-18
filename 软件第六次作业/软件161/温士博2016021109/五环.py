@@ -1,3 +1,4 @@
+import turtle
 #五环
 turtle.color("blue") #定义颜色
 turtle.penup() #penup和pendown()设置画笔抬起或放下时是否绘制直线
