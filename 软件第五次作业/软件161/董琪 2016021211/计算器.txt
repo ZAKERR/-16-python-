@@ -1,0 +1,40 @@
+
+def jia(x, y):
+ 
+   return x + y
+ 
+def jian(x, y):
+ 
+   return x - y
+ 
+def cheng(x, y):
+ 
+   return x * y
+ 
+def chu(x, y):
+ 
+   return x / y
+ 
+print("选择运算：")
+print("1、加")
+print("2、减")
+print("3、乘")
+print("4、除")
+ 
+a = input("请选择(1/2/3/4):")
+ 
+b = int(input("输入第一个数字: "))
+c = int(input("输入第二个数字: "))
+ 
+if a == '1':
+   print(num1,"+",num2,"=", jia(num1,num2))
+ 
+elif a == '2':
+   print(num1,"-",num2,"=", jian(num1,num2))
+ 
+elif a == '3':
+   print(num1,"*",num2,"=", cheng(num1,num2))
+ 
+elif a == '4':
+   print(num1,"/",num2,"=", chu(num1,num2))
+
