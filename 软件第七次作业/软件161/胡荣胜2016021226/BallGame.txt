@@ -1,0 +1,50 @@
+#弹球
+from tkinter import *
+import time
+import random
+class Ball:
+    def __init__(self,canvas,color,bx,by,x0,y0,x1,y1):
+        self.canvas=canvas
+        self.id=canvas.create_oval(x0,y0,x1,y1,fill=color)#圆形
+        self.canvas.move(self.id,bx,by)
+        starts=[-3,-2,-1,1,2,3]
+        random.shuffle(starts)
+        self.x=starts[0]
+        self.y=starts[1]
+        self.canvas_height=self.canvas.winfo_height()
+        self.canvas_width=self.canvas.winfo_width()
+        
+    def draw(self):
+        self.canvas.move(self.id,self.x,self.y)
+        pos=self.canvas.coords(self.id)
+        if pos[1]<=0:self.y=1
+        if pos[3]>=self.canvas_height:self.y=-1
+        if pos[0]<=0:self.x=1
+        if pos[2]>=self.canvas_width:self.x=-1
+
+    
+        
+
+tk=Tk()
+tk.title("BallGame")
+tk.resizable(0,0)
+tk.wm_attributes("-topmost",1)
+canvas=Canvas(tk,width=800,height=600,bd=0,highlightthickness=0)
+canvas.pack()
+tk.update()
+
+#小球实例化
+ballone = Ball(canvas,'green',200,300,10,10,20,20)
+
+
+balltwo = Ball(canvas,'red',555,266,20,20,60,60)
+
+
+ballthree = Ball(canvas,'blue',555,266,100,100,200,200)
+while True:
+    ballone.draw()
+    balltwo.draw()
+    ballthree.draw()
+    tk.update_idletasks()
+    tk.update()
+    time.sleep(0.01)
