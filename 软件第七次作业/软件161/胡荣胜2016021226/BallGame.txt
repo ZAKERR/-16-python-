@@ -2,6 +2,7 @@
 from tkinter import *
 import time
 import random
+
 class Ball:
     def __init__(self,canvas,color,bx,by,x0,y0,x1,y1):
         self.canvas=canvas
@@ -20,8 +21,8 @@ class Ball:
         if pos[1]<=0:self.y=1
         if pos[3]>=self.canvas_height:self.y=-1
         if pos[0]<=0:self.x=1
-        if pos[2]>=self.canvas_width:self.x=-1
-        
+        if pos[2]>=self.canvas_width:self.x=-1    
+
 tk=Tk()
 tk.title("BallGame")
 tk.resizable(0,0)
@@ -33,9 +34,9 @@ tk.update()
 #小球实例化
 ballone = Ball(canvas,'green',200,300,10,10,20,20)
 
-balltwo = Ball(canvas,'red',555,266,20,20,60,60)
+balltwo = Ball(canvas,'red',500,266,20,20,60,60)
 
-ballthree = Ball(canvas,'blue',555,266,100,100,200,200)
+ballthree = Ball(canvas,'blue',155,260,100,100,200,200)
 
 while True:
     ballone.draw()
