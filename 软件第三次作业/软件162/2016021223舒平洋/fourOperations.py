@@ -7,19 +7,21 @@ Created on Thu Sep 27 17:35:09 2018
 
 def add(a,b):
     return a + b
-def multiply(a,b):
-    return a * b
-def division(a,b):
-    try:
-        return a / b 
-    except(ZeroDivisionError,TypeError) as e:
-        print(e)     
+    
 def subtraction(a,b):
     try:
         return a - b
     except(ZeroDivisionError,TypeError) as e:
         print(e)
-    
+        
+def multiply(a,b):
+    return a * b
+
+def division(a,b):
+    try:
+        return a / b 
+    except(ZeroDivisionError,TypeError) as e:
+        print(e)     
 while True:
     number1 = float(input('Enter the first number: '))
     number2 = float(input('Enter the second number: '))
