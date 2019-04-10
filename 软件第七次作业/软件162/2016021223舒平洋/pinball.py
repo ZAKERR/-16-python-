@@ -6,16 +6,17 @@ Created on Thu Nov  1 16:20:53 2018
 """
 
 '''
-#生成界面
+#the game of pinball
+
 from tkinter import *
 tk = Tk()
 tk.title("BallGame")
-tk.resizable(0,0)
+tk.resizable(0,0)   
 tk.wm_attributes("-topmost",1)
-canvas = Canvas(tk, width = 800, height = 600, bd = 0
-                ,highlightthickness = 0)
-canvas.pack()
-tk.update() '''
+canvas = Canvas(tk, width = 800, height = 600, bd = 0, highlightthickness = 0)
+canvas.pack()  #package
+tk.update() 
+'''
 
 from tkinter import *
 import time
@@ -59,7 +60,6 @@ canvas = Canvas(tk, width = 800, height = 600, bd = 0
 canvas.pack()
 tk.update() 
 
-#小球的实例化
 ball = Ball(canvas,'black')
 ball2 = Ball(canvas,'red')
 ball3 = Ball(canvas,'blue')
